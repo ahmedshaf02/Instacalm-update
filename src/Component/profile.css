@@ -1,0 +1,49 @@
+
+.userImg{
+width: 160px;
+height: 160px;
+border-radius: 50%
+}
+.container2{
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 30px auto
+}
+.containerLike{
+  display: flex;
+  justify-content: space-around;
+}
+@media(max-width:400px){
+  .container2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px
+}
+.galleryImg{
+  margin: 10px;
+  width:30%
+}
+
+.margin{
+  margin: 4px
+}
+
+.followBtn{
+  padding: 8px 12px;
+background-color: rgb(70, 184, 250)!important;
+border: none;
+font-size: 18px;
+border-radius: 4px;
+color: white;
+cursor: pointer;
+margin-top: 5px
+}

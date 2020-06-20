@@ -1,0 +1,118 @@
+
+.postBtn{
+  padding: 8px 12px;
+  background-color: transparent!important;
+  border: 2px solid  rgb(221, 221, 221) !important;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px
+  }
+
+.cardHeader{
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #108f80 ;
+  border-radius:4px 4px 0px 0px;
+  padding: 16px;
+  background-color: #108f80;
+  color: white
+
+}
+.cardMain{
+  padding: 16px;
+  border-width: 0px 0.4px;
+  border-style: solid;
+  border-color: rgb(222, 226, 222) ;
+  background-color: #F8FFF8
+}
+.cardFooter{
+  padding: 10px;
+  border-width: 0px 0.5px 0.5px 0.5px;
+  border-style: solid;
+  border-color: #108f80 ;
+  border-radius:0 0 4px 4px;
+  text-align: right;
+  background-color: #108f80;
+}
+
+.container3{
+  max-width: 700px;
+  margin: 30px auto
+}
+
+/* for posts  */
+  .container4{
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 6px;
+    /* border-width: 0px 0.2px;
+    border-style: solid;
+    border-color: rgb(211, 214, 211)  */
+    box-shadow:0px 0px 4px 0px rgba(43, 44, 44, 0.3)
+  }
+
+
+.postBtn{
+  padding: 8px 12px;
+  background-color: transparent!important;
+  border: 2px solid  rgb(221, 221, 221) !important;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: white
+  }
+
+.postHeader{
+  /* border:0.2px solid rgb(211, 211, 211); */
+  border-radius:6px 6px 0px 0px;
+  padding: 16px;
+  background-color:#F7F7F7;
+  color: #4C4848
+  
+}
+.postMain{
+  color: #4C4848;
+ 
+}
+.postMain img{
+  width: 100%
+}
+.postFooter{
+  padding: 10px;
+  border:0.2px solid rgb(211, 211, 211);
+  border-radius:0 0 8px 8px;
+  text-align: right;
+  background-color: #EFEFEF;
+  color: #4C4848
+}
+.margin{
+  margin:10px
+}
+
+.container3{
+  max-width: 700px;
+  margin: 30px auto
+}
+
+.center{
+  text-align: center
+}
+.progress{
+  width: 50%
+}
+.centerflex{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+Link{
+  font-size: 18px
+}
+
+.pointer{
+  cursor: pointer
+}
+h4{
+  font-weight: bold
+}
