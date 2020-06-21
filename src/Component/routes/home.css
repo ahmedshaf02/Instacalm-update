@@ -12,7 +12,7 @@
   border-width: 0.5px;
   border-style: solid;
   border-color: #108f80 ;
-  border-radius:8px 8px 0px 0px;
+  border-radius:10px 10px 0px 0px;
   padding: 16px;
   background-color: #108f80;
   color: white
@@ -30,7 +30,7 @@
   border-width: 0px 0.5px 0.5px 0.5px;
   border-style: solid;
   border-color: #108f80 ;
-  border-radius:0 0 8px 8px;
+  border-radius:0 0 10px 10px;
   text-align: right;
   background-color: #108f80;
 }
