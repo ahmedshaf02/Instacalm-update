@@ -10,6 +10,7 @@
   "dependencies": {
     "firebase": "7.15.1",
     "materialize-css": "1.0.0",
+    "push.js": "1.0.12",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-redux": "7.2.0",
