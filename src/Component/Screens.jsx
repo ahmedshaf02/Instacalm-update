@@ -36,9 +36,9 @@ const Screens = () => {
         <Route  path="/profile/:id">
           <UserProfile />
         </Route>
-        {/* <Route>
+        <Route>
           <NotFoundPage />
-        </Route> */}
+        </Route>
     </Switch>
     </>
   );
