@@ -1,7 +1,7 @@
 
 import React from "react";
 import {useSelector,useDispatch} from "react-redux"
-import "./auth.css"
+import "./auth/auth.css"
 import {Link,useHistory} from "react-router-dom"
 
 const Styles = {

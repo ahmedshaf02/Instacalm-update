@@ -46,6 +46,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+
+<script type="application/javascript" src="https://sdki.truepush.com/sdk/v2.0.2/app.js" async></script>
+<script>
+var truepush = window.truepush || [];
+truepush.push(function(){
+    truepush.Init({
+        id: "5eef7ceab71be99ed15aae63"
+        }, function(error){
+          if(error) console.error(error);
+        })
+    })
+</script>
 </body>
 
 </html>

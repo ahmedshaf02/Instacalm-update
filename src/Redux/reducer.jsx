@@ -13,5 +13,9 @@ export default (state=initState,{type,payload})=>{
         return null
       }
 
+      if(type==="UPDATE"){
+        return payload
+      }
+
   return state
 }
