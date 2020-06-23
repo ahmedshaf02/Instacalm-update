@@ -8,6 +8,7 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "0.19.2",
     "firebase": "7.15.1",
     "materialize-css": "1.0.0",
     "push.js": "1.0.12",

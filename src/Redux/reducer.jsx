@@ -14,6 +14,7 @@ export default (state=initState,{type,payload})=>{
       }
 
       if(type==="UPDATE"){
+        console.log(payload)
         return payload
       }
 

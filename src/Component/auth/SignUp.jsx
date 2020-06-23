@@ -80,35 +80,35 @@ const SignUp = (props)=>{
         <div className="box">
           <h1 className="header">Instacalm</h1>
 
-          <div class="input-field col s6">
+          <div className="input-field col s6">
             <input id="name" 
             value={name} onChange={(e)=>setName(e.target.value)}
-            type="text" class="validate"/>
+            type="text" className="validate"/>
 
-            <label for="name">Username</label>
+            <label htmlFor="name">Username</label>
           </div>
 
-          <div class="input-field col s6">
+          <div className="input-field col s6">
             <input id="email1" 
             value={email} onChange={(e)=>setEmail(e.target.value)}
-            type="text" class="validate"/>
-            <label for="email1">Email</label>
+            type="text" className="validate"/>
+            <label htmlFor="email1">Email</label>
           </div>
 
-          <div class="input-field col s6">
+          <div className="input-field col s6">
             <input id="password"
              value={password} onChange={(e)=>setPassword(e.target.value)}
-             type="password" class="validate"/>
-            <label for="password">Password</label>
+             type="password" className="validate"/>
+            <label htmlFor="password">Password</label>
           </div>
 
-          {/* <div class="file-field input-field ">
-            <div class="btn #64b5f6 blue lighten-2">
+          {/* <div className="file-field input-field ">
+            <div className="btn #64b5f6 blue lighten-2">
               <span>Profile imgage</span>
               <input type="file" onChange={e=>setProfile(e.target.files[0])}/>
             </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text"/>
+            <div className="file-path-wrapper">
+              <input className="file-path validate" type="text"/>
             </div>
           </div> */}
 

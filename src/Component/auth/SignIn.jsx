@@ -63,18 +63,18 @@ const SignIn = ()=>{
           <h1 className="header">Instacalm</h1>
 
 
-          <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
+          <div className="input-field col s6">
+              <i className="material-icons prefix">account_circle</i>
               <input  value={email} onChange={(e)=>setEmail(e.target.value)}
                id="icon_prefix" type="text"/>
-              <label for="icon_prefix">Email</label>
+              <label htmlFor="icon_prefix">Email</label>
           </div>
 
-          <div class="input-field col s6">
-              <i class="material-icons prefix">lock</i>
+          <div className="input-field col s6">
+              <i className="material-icons prefix">lock</i>
               <input   value={password} onChange={(e)=>setPassword(e.target.value)}
                 id="icon_prefix" type="password"/>
-              <label for="icon_prefix">Password</label>
+              <label htmlFor="icon_prefix">Password</label>
           </div>
 
           

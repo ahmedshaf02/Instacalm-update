@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import {useSelector,useDispatch} from "react-redux"
 import "./auth/auth.css"
 import {Link,useHistory} from "react-router-dom"
@@ -15,7 +15,8 @@ const Navigate = ()=>{
   const state  = useSelector(state=>state)
   const dispatch = useDispatch()
   const history  = useHistory()
-
+  
+  
   const handleLogout=()=>{
       localStorage.clear()  
       dispatch({type:"CLEAR"})
@@ -24,19 +25,21 @@ const Navigate = ()=>{
   
   const renderNav=()=>{
     if(state){
-      return[
-
-        <li><Link style={Styles.navigate} to="/profile">Profile</Link></li>,
-        <li><Link style={Styles.navigate} to="/createpost">Create Post</Link></li>,
-        <button onClick={handleLogout} className="logoutBtn">Logout</button>
-      ]
+      return(
+        <>
+          <li><Link style={Styles.navigate} to="/profile">Profile</Link></li>,
+          <li><Link style={Styles.navigate} to="/createpost">Create Post</Link></li>,
+          <button onClick={handleLogout} className="logoutBtn">Logout</button>
+        </>
+      )
     }
     else{
-      return[
-
+     return(
+       <>
         <li><Link style={Styles.navigate} to="/signin">Sign In</Link></li>,
         <li><Link style={Styles.navigate} to="/signup">Sign Up</Link></li>
-      ]
+       </>
+     )
     }
   }
 
@@ -45,8 +48,8 @@ const Navigate = ()=>{
   
       <nav>
       <div className="nav-wrapper white" >
-        <Link style={Styles.navigate} to={state?"/":"/signin"} class="brand-logo-left logo">Instacalm</Link>
-        <ul id="nav-mobile" class="right">
+        <Link style={Styles.navigate} to={state?"/":"/signin"} className="brand-logo-left logo">Instacalm</Link>
+        <ul id="nav-mobile" className="right">
             {renderNav()}
         </ul>
       </div>

@@ -45,8 +45,8 @@ const Profile = () => {
               <h5>{state?state.email:"loading"}</h5>
               <div className="containerLike">
               <span className="margin">{mypost.length} posts</span>
-              <span className="margin">{state.follower.length} follower</span>
-              <span className="margin">{state.following.length}  following</span>
+              <span className="margin">{state?state.follower.length:0} follower</span>
+              <span className="margin">{state?state.following.length:0}  following</span>
               </div>
              
             </div>
