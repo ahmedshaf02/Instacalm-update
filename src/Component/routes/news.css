@@ -1,0 +1,30 @@
+
+
+.newsBox {
+  border-radius: 6px;
+  margin: 0 10% 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(151, 150, 150, 0.48);
+  cursor: pointer;
+}
+.newsDisplay {
+  display: flex;
+  flex-direction: row;
+}
+.newsImg {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 4px 6px 0px rgba(151, 150, 150, 0.48);
+  align-self: center;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.containerNews{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 20px;
+  height: 300px;
+  overflow: auto
+}
