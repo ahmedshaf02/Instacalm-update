@@ -27,6 +27,9 @@ navigation- it shows links depends on if user is logged in
 
 localStorage  data persist
 
+User search -- you can search user and see thier profile
+News -- you can see top news on home page
+
 User Search on Home page -- you can search user and see their profile
 
 tech sack used -  React,React-Redux, Firebase,MongoDB,Express,Node.js,
