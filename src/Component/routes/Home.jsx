@@ -5,7 +5,8 @@ import Preloader from "./Preloader";
 import M from "materialize-css";
 import { Link } from "react-router-dom";
 import SearchUserList from "./SearchUserList";
-import News from "./News"
+import News from "./News";
+import throttle from "lodash/throttle"
 
 const styles = { fontSize: 18 };
 
@@ -150,9 +151,15 @@ const Home = () => {
       });
   };
 
+  
+
   const handleSearchUser = () => {
     const name = searchUser.current.value;
     console.log(name);
+    if(!name){
+      setSearchResult([])
+    }
+    let getData;
 
     fetch(`https://sqtis.sse.codesandbox.io/search/${name}`, {
       method: "get",
@@ -163,13 +170,18 @@ const Home = () => {
     })
       .then(data => data.json())
       .then(data => {
-        setSearchResult(data);
+        getData =  setTimeout(() => {
+          
+          setSearchResult(data);
+        }, 200);
         console.log(searchResult);
       })
       .catch(err => {
         console.log(err, "error");
         return;
       });
+
+      return (()=>clearTimeout(getData))
   };
 
   return (
@@ -188,16 +200,17 @@ const Home = () => {
       </div>
       {searchResult && (
         <div className="searchUserContainer">
-          {searchResult &&
-            searchResult.map(ele => (
-              <SearchUserList key={ele._id} user={ele} />
-            ))}
+          {searchResult
+            ? searchResult.map(ele => (
+                <SearchUserList key={ele._id} user={ele} />
+              ))
+            : "not found"}
         </div>
       )}
       {/* search user code  */}
 
       {/* for news */}
-      <News/>
+      <News />
 
       <div className="margin">
         {/* to get all post */}

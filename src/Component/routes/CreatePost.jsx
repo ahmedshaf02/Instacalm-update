@@ -38,6 +38,10 @@ useEffect(()=>{
         console.log(err,"error") 
       })
     }
+
+    return () => {
+      return;
+    };
   
 },[url,])
 
@@ -64,6 +68,7 @@ useEffect(()=>{
       })
     }
     )
+
   }
   // console.log(url) 
 

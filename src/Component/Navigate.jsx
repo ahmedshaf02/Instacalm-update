@@ -27,6 +27,7 @@ const Navigate = ()=>{
     if(state){
       return(
         <>
+          <li><Link style={Styles.navigate} to="/myfollowingpost">My Follwing Post</Link></li>,
           <li><Link style={Styles.navigate} to="/profile">Profile</Link></li>,
           <li><Link style={Styles.navigate} to="/createpost">Create Post</Link></li>,
           <button onClick={handleLogout} className="logoutBtn">Logout</button>

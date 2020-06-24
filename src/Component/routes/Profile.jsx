@@ -38,8 +38,19 @@ const Profile = () => {
       <div>
         <div className="container2">
             <div>
-              <img className="userImg" src="https://images.unsplash.com/photo-1552794972-34a0dbd0a523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="profile"/>
+              <img className="userImg" src={state?state.image:"loading"} alt="profile"/>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>Image Upload</span>
+                  <input type="file" 
+                   />
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Upload one or more files"/>
+                </div>
+              </div>
             </div>
+
             <div className="center">
               <h2>{state?state.name:"loading"}</h2>
               <h5>{state?state.email:"loading"}</h5>

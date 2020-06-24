@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "0.19.2",
     "firebase": "7.15.1",
+    "lodash": "4.17.15",
     "materialize-css": "1.0.0",
     "push.js": "1.0.12",
     "react": "16.12.0",
