@@ -27,4 +27,8 @@ navigation- it shows links depends on if user is logged in
 
 localStorage  data persist
 
+myfollowingpost - user can see his followed post on different route
+
+
+
 tech sack used -  React,React-Redux, Firebase,MongoDB,Express,Node.js,
