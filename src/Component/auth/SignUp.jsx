@@ -23,19 +23,19 @@ const SignUp = (props)=>{
   
   useEffect(()=>{
     if(url){
-      console.log(url)
       postData()
     }
   },[url])
-
+  
   const postData=()=>{
     // signup request to server
+    console.log(url)
     fetch("https://sqtis.sse.codesandbox.io/signup",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
       },
-      body:JSON.stringify({name,email,password,img:url})
+      body:JSON.stringify({name,email,password,image:url})
     })
     .then(data=>data.json())
     .then(result=>{
@@ -95,7 +95,8 @@ const SignUp = (props)=>{
           <h1 className="header">Instacalm</h1>
 
           <div className="input-field col s6">
-            <input id="name" 
+              <i className="material-icons prefix">account_circle</i>
+            <input id="name"
             value={name} onChange={(e)=>setName(e.target.value)}
             type="text" className="validate"/>
 
@@ -103,6 +104,7 @@ const SignUp = (props)=>{
           </div>
 
           <div className="input-field col s6">
+              <i className="material-icons prefix">mail</i>
             <input id="email1" 
             value={email} onChange={(e)=>setEmail(e.target.value)}
             type="text" className="validate"/>
@@ -110,22 +112,24 @@ const SignUp = (props)=>{
           </div>
 
           <div className="input-field col s6">
+              <i className="material-icons prefix">lock</i>
             <input id="password"
              value={password} onChange={(e)=>setPassword(e.target.value)}
              type="password" className="validate"/>
             <label htmlFor="password">Password</label>
           </div>
-          <div class="file-field input-field">
-                <div class="btn #448aff blue accent-2">
+          
+          <div className="file-field input-field">
+                <div className="btn #448aff blue accent-2">
                   <span>Upload Profile</span>
                   <input type="file" 
                   onChange={e=>setImage(e.target.files[0])}
                    />
                 </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text" placeholder="Upload one or more files"/>
+                <div className="file-path-wrapper">
+                  <input className="file-path validate" type="text" placeholder="Upload image"/>
                 </div>
-              </div>
+          </div>
 
         
          <button onClick={handleSignup} className="btn #448aff blue accent-2">SIGN UP</button>

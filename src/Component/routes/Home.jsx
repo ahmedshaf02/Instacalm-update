@@ -6,7 +6,6 @@ import M from "materialize-css";
 import { Link } from "react-router-dom";
 import SearchUserList from "./SearchUserList";
 import News from "./News";
-import throttle from "lodash/throttle"
 
 const styles = { fontSize: 18 };
 
@@ -151,15 +150,9 @@ const Home = () => {
       });
   };
 
-  
-
   const handleSearchUser = () => {
     const name = searchUser.current.value;
     console.log(name);
-    if(!name){
-      setSearchResult([])
-    }
-    let getData;
 
     fetch(`https://sqtis.sse.codesandbox.io/search/${name}`, {
       method: "get",
@@ -170,23 +163,18 @@ const Home = () => {
     })
       .then(data => data.json())
       .then(data => {
-        getData =  setTimeout(() => {
-          
-          setSearchResult(data);
-        }, 200);
+        setSearchResult(data);
         console.log(searchResult);
       })
       .catch(err => {
         console.log(err, "error");
         return;
       });
-
-      return (()=>clearTimeout(getData))
   };
 
   return (
     <>
-      <h4>{!state ? "Loading..." : `"Welcome !!" ${state.name}`}</h4>
+      <h4 className="margin">{!state ? "Loading..." : `"Welcome !!" ${state.name}`}</h4>
       {/* loading code */}
       {!loading ? <Preloader /> : false}
 
@@ -251,7 +239,7 @@ const Home = () => {
                     {ele.likes.includes(state._id) ? (
                       <i
                         onClick={() => handleUnlikePost(ele._id)}
-                        className="material-icons pointer black"
+                        className="material-icons pointer"
                       >
                         thumb_down
                       </i>

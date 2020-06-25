@@ -4,6 +4,7 @@ import "./auth.css";
 import {Link,useHistory} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import M from "materialize-css"
+import { userState } from "../../Redux/actions";
 
 const Styles = {
   navigate:{
@@ -32,10 +33,11 @@ const SignIn = ()=>{
     })
     .then(data=>data.json())
     .then(result=>{
+      console.log(result)
         localStorage.setItem("jwt",result.token)
         localStorage.setItem("user",JSON.stringify(result.user))
 
-        dispatch({type:"USER",payload:result.user}) 
+        dispatch(userState(result.user)) 
 
         if(result.error){
           return M.toast({html: result.error,classes:"teal lighten-2"})

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {useSelector,useDispatch} from "react-redux"
 import "./auth/auth.css"
 import {Link,useHistory} from "react-router-dom"
+import { clearState } from "../Redux/actions";
 
 const Styles = {
   navigate:{
@@ -19,7 +20,7 @@ const Navigate = ()=>{
   
   const handleLogout=()=>{
       localStorage.clear()  
-      dispatch({type:"CLEAR"})
+      dispatch(clearState())
       history.push("/signin") 
   }
   
@@ -27,7 +28,7 @@ const Navigate = ()=>{
     if(state){
       return(
         <>
-          <li><Link style={Styles.navigate} to="/myfollowingpost">My Follwing Post</Link></li>,
+          <li><Link style={Styles.navigate} to="/myfollowingpost">My following post</Link></li>,
           <li><Link style={Styles.navigate} to="/profile">Profile</Link></li>,
           <li><Link style={Styles.navigate} to="/createpost">Create Post</Link></li>,
           <button onClick={handleLogout} className="logoutBtn">Logout</button>

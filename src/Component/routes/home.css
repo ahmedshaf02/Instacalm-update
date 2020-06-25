@@ -46,8 +46,7 @@
   /* border-width: 0px 0.2px;
     border-style: solid;
     border-color: rgb(211, 214, 211)  */
-  box-shadow: 0px 0px 4px 1px rgba(43, 44, 44, 0.3);
-  /* box-shadow: 0px 6px 14px -2px #000000; */
+  box-shadow: 0px 0px 4px 0px rgba(43, 44, 44, 0.3);
 }
 
 .postBtn {
@@ -64,7 +63,7 @@
   /* border:0.2px solid rgb(211, 211, 211); */
   border-radius: 6px 6px 0px 0px;
   padding: 16px;
-  background-color: #F9F8F8;
+  background-color: #f7f7f7;
   color: #4c4848;
 }
 .postMain {
@@ -78,7 +77,7 @@
   border: 0.2px solid rgb(211, 211, 211);
   border-radius: 0 0 6px 6px;
   text-align: right;
-  background-color: #F9F8F8;
+  background-color: #efefef;
   color: #4c4848;
 }
 .margin {

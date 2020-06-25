@@ -3,6 +3,7 @@ import "./profile.css";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Preloader from "./Preloader";
+import { updateState } from "../../Redux/actions";
 
 const UserProfile = () => {
   const [userProfile, setUserProfile] = useState("");
@@ -48,7 +49,7 @@ const UserProfile = () => {
         console.log(data);
 
         localStorage.setItem("user", JSON.stringify(data.loggedUser));
-        dispatch({ type: "UPDATE", payload: data.loggedUser });
+        dispatch(updateState(data.loggedUser));
 
         setUserProfile(prevState => {
           return {
@@ -101,7 +102,7 @@ const UserProfile = () => {
             <div>
               <img
                 className="userImg"
-                src="https://images.unsplash.com/photo-1552794972-34a0dbd0a523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                src={userProfile.user.image}
                 alt="profile"
               />
             </div>
@@ -118,7 +119,7 @@ const UserProfile = () => {
                   {userProfile.user.following.length} followings
                 </span>
               </div>
-              <div className="center">
+              <div >
                 {showFollow ? (
                   <button
                     onClick={() => handleFollowUser(userProfile.user._id)}

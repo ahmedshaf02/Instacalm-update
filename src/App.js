@@ -4,6 +4,7 @@ import "./styles.css";
 import Screens from "./Component/Screens";
 import Navigate from "./Component/Navigate";
 import { useDispatch } from "react-redux";
+import { userState } from "./Redux/actions";
 
 const Routing = () => {
   return (
@@ -20,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-    dispatch({ type: "USER", payload: user });
+    dispatch(userState(user));
 
     if (user) {
       console.log(user);

@@ -18,5 +18,14 @@ export default (state=initState,{type,payload})=>{
         return payload
       }
 
+      if(type==="UPDATE_IMAGE"){
+        console.log(payload)
+        return {
+          ...state,
+          image:payload
+        }
+      }
+      
+
   return state
 }
