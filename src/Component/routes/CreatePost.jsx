@@ -93,14 +93,14 @@ useEffect(()=>{
               placeholder="body"/>
 
               {/* file  */}
-              <div class="file-field input-field">
-                <div class="btn">
+              <div className="file-field input-field">
+                <div className="btn">
                   <span>Image Upload</span>
                   <input type="file" 
                    onChange={e=>setImage(e.target.files[0])}/>
                 </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text" placeholder="Upload one or more files"/>
+                <div className="file-path-wrapper">
+                  <input className="file-path validate" type="text" placeholder="Upload one or more files"/>
                 </div>
               </div>
             </div>

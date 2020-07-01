@@ -19,7 +19,7 @@ const News = () => {
   return (
     <>
       <div className="containerNews">
-        <h4>Top News - </h4>
+        <h4 className="fix">Top News - </h4>
         {data &&
           data.map(ele => (
             <>
