@@ -206,7 +206,7 @@ const Home = () => {
           post &&
           post.reverse().map(ele => (
             <>
-              <div key={ele.image} className="container4">
+              <div key={ele._id} className="container4">
                 <div className="postHeader">
                   <Link
                     to={
@@ -280,8 +280,8 @@ const Home = () => {
                       >
                         account_circle
                       </i>
-                      <input id="icon_prefix1" type="text" />
-                      <label for="icon_prefix1">Add the comments *</label>
+                      <input id={ele._id} type="text" />
+                      <label for={ele._id}>Add the comments *</label>
                     </div>
                   </form>
                 </div>

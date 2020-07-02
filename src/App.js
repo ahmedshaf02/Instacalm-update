@@ -26,7 +26,10 @@ export default function App() {
     if (user) {
       console.log(user);
     } else {
-      history.push("/signin");
+      if(!history.location.pathname.startsWith("/reset")){
+
+        history.push("/signin");
+      }
     }
   }, []);
 

@@ -42,6 +42,10 @@ const SignUp = (props)=>{
       if(result.error){
        return M.toast({html: result.error,classes:"teal lighten-2"})
       }
+      if(result.message){
+        M.toast({html: result.message,classes:"teal lighten-2"})
+       history.push("/signin")
+      }
       else{
         M.toast({html: "singup successfully",classes:"teal lighten-2"})
         history.push("/signin")

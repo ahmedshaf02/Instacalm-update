@@ -8,6 +8,8 @@ import CreatePost from "./routes/CreatePost";
 import UserProfile from "./routes/UserProfile";
 import NotFoundPage from "./routes/NotFoundPage";
 import MyFollowingPost from "../Component/routes/MyFollowingPost";
+import ForgotPassword from "./auth/ForgotPassword"
+import UpdatePassword from "./auth/UpdatePassword"
 
 const Screens = () => {
   return (
@@ -39,6 +41,14 @@ const Screens = () => {
 
         <Route path="/profile/:id">
           <UserProfile />
+        </Route>
+
+        <Route  exact path="/reset">
+          <ForgotPassword/>
+        </Route>
+
+        <Route path="/reset/:token">
+          <UpdatePassword/>
         </Route>
 
         <Route>
