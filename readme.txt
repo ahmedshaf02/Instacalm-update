@@ -1,6 +1,24 @@
 
 * Features
-# Instacalm -- A social post sharing platform
+# Instacalm -- A social post sharing 
+
+##You can share your post after signing in,
+
+## You can like other user posts
+
+## You can follow and unfollow other users
+
+## You can delete your post but not others.
+
+## You can check other users profile.
+
+## You can change your profile picture.
+
+## You can seacrh for other users
+
+## You can see live news on home page.
+ 
+## you can see your following users post 
 
 SignUp using mongoDb
 SignIn using mongoDb
