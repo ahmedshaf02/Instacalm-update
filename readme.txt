@@ -1,5 +1,6 @@
 
 * Features
+# Instacalm -- A social post sharing platform
 
 SignUp using mongoDb
 SignIn using mongoDb
