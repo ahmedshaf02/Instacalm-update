@@ -4,7 +4,7 @@
 ## A social post sharing app
 
 | SIGN-UP |  SIGN-IN | HOME PAGE | PROFILE | POST |
- --- | --- | --- |
+| --- | --- | --- | --- | --- |
  
  **You can sign-up with or without image**
  
