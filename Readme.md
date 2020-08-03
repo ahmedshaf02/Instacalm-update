@@ -28,4 +28,4 @@
 
 ##thank you
 
-**you can visit here** [instacalm](https://instacalm-app.vercel.app/)
+**you can visit here** [instacalm](https://instacalm-app.vercel.app)
