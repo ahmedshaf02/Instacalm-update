@@ -23,11 +23,11 @@
 ![Profile page](https://firebasestorage.googleapis.com/v0/b/fir-login-react-66d68.appspot.com/o/images%2Finstacalm%208.PNG?alt=media&token=5b4978c4-b1b2-4eaa-8f0d-baafb9fbaabe)
 
 
-#You can search for profile 
+# You can search for profile 
 
 ![live user search ](https://firebasestorage.googleapis.com/v0/b/fir-login-react-66d68.appspot.com/o/images%2Finstacalm10.PNG?alt=media&token=43640ed1-ca1d-4ef8-a006-e1976ca305a8)
 
 
-##thank you
+## thank you
 
 **you can visit here** [instacalm](https://instacalm-app.vercel.app)
