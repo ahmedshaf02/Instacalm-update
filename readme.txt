@@ -8,6 +8,8 @@
 
 ## You can follow and unfollow other users
 
+## You can make comment on users post 
+
 ## You can delete your post but not others.
 
 ## You can check other users profile.
