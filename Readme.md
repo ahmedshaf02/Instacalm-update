@@ -5,6 +5,9 @@
 
 | SIGN-UP |  SIGN-IN | HOME PAGE | PROFILE | POST |
 | --- | --- | --- | --- | --- |
+
+**you can visit here** [instacalm](https://instacalm-app.vercel.app)
+**Medium post about Instacalm** [instacalm](https://medium.com/@ahmedshaf02/share-your-post-here-on-instacalm-4c4d99ec738f)
  
  **You can sign-up with or without image**
  ![zoom-0](https://user-images.githubusercontent.com/59289789/89711236-d059cd00-d93d-11ea-8adb-168e68136f53.gif)
@@ -32,6 +35,3 @@
 ![live user search ](https://firebasestorage.googleapis.com/v0/b/fir-login-react-66d68.appspot.com/o/images%2Finstacalm10.PNG?alt=media&token=43640ed1-ca1d-4ef8-a006-e1976ca305a8)
 
 
-## thank you
-
-**you can visit here** [instacalm](https://instacalm-app.vercel.app)
