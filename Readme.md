@@ -10,7 +10,7 @@
 
 Project Frontend Tech Stack
 | Bootstrap | React |  Redux | Node | Express |  MongoDb |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 
 
  ![zoom-0](https://user-images.githubusercontent.com/59289789/89711236-d059cd00-d93d-11ea-8adb-168e68136f53.gif)
