@@ -12,17 +12,17 @@ Project Frontend Tech Stack
 | React |  Redux | CSS |  Bootstrap | Node | Express |  MongoDb |
 | --- | --- | --- | --- | --- | --- | --- |
 
+
+ ![zoom-0](https://user-images.githubusercontent.com/59289789/89711236-d059cd00-d93d-11ea-8adb-168e68136f53.gif)
+
+
 # App Routes
 
 | SIGN-UP |  SIGN-IN | HOME PAGE | PROFILE | POST |
 | --- | --- | --- | --- | --- |
 
-
  
  **SIGN UP with or without image**
- ![zoom-0](https://user-images.githubusercontent.com/59289789/89711236-d059cd00-d93d-11ea-8adb-168e68136f53.gif)
-
- 
 ![Sign-up page for our app](https://firebasestorage.googleapis.com/v0/b/fir-login-react-66d68.appspot.com/o/images%2Finstacalm%201.PNG?alt=media&token=d12f9dbf-9689-4e78-8e9d-b9c9798f47bd)
 
 
