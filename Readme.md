@@ -3,18 +3,20 @@
 
 ## A social post sharing app
 
+
+**you can visit here** [instacalm](https://instacalm-app.vercel.app)
+
+**Medium post about Instacalm** [instacalm](https://medium.com/@ahmedshaf02/share-your-post-here-on-instacalm-4c4d99ec738f)
+
 Project Frontend Tech Stack
 | React |  Redux | CSS |  Bootstrap | Node | Express |  MongoDb |
 | --- | --- | --- | --- | --- | --- | --- |
 
+# App Routes
 
 | SIGN-UP |  SIGN-IN | HOME PAGE | PROFILE | POST |
 | --- | --- | --- | --- | --- |
 
-**you can visit here** [instacalm](https://instacalm-app.vercel.app)
-
-
-**Medium post about Instacalm** [instacalm](https://medium.com/@ahmedshaf02/share-your-post-here-on-instacalm-4c4d99ec738f)
 
  
  **SIGN UP with or without image**
