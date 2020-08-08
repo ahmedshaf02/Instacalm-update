@@ -9,7 +9,7 @@
 **Medium post about Instacalm** [instacalm](https://medium.com/@ahmedshaf02/share-your-post-here-on-instacalm-4c4d99ec738f)
 
 Project Frontend Tech Stack
-| React |  Redux | CSS |  Bootstrap | Node | Express |  MongoDb |
+| Bootstrap | React |  Redux | Node | Express |  MongoDb |
 | --- | --- | --- | --- | --- | --- | --- |
 
 
