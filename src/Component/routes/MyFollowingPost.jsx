@@ -13,7 +13,7 @@ const MyFollowingPost = () => {
   const state = useSelector(state => state);
   // console.log(state)
   useEffect(() => {
-    fetch("https://sqtis.sse.codesandbox.io/followingpost", {
+    fetch("https://instacalm-server.herokuapp.com/followingpost", {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const MyFollowingPost = () => {
 
   const handleLikePost = id => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/like", {
+    fetch("https://instacalm-server.herokuapp.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const MyFollowingPost = () => {
 
   const handleUnlikePost = id => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/unlike", {
+    fetch("https://instacalm-server.herokuapp.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ const MyFollowingPost = () => {
 
   const hanldeDeletePost = postId => {
     console.log(postId);
-    fetch(`https://sqtis.sse.codesandbox.io/deletepost/${postId}`, {
+    fetch(`https://instacalm-server.herokuapp.com/deletepost/${postId}`, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",
@@ -120,7 +120,7 @@ const MyFollowingPost = () => {
 
   const handleComment = (text, id) => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/comment", {
+    fetch("https://instacalm-server.herokuapp.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
