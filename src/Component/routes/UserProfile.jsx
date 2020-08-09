@@ -16,7 +16,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     // to get all posts
-    fetch(`https://sqtis.sse.codesandbox.io/user/${id}`, {
+    fetch(`https://instacalm-server.herokuapp.com/user/${id}`, {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const UserProfile = () => {
 
   const handleFollowUser = followId => {
     console.log(followId);
-    fetch(`https://sqtis.sse.codesandbox.io/follow`, {
+    fetch(`https://instacalm-server.herokuapp.com/follow`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ const UserProfile = () => {
 
   const handleUnfollowUser = unfollowId => {
     console.log(unfollowId);
-    fetch(`https://sqtis.sse.codesandbox.io/unfollow`, {
+    fetch(`https://instacalm-server.herokuapp.com/unfollow`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
