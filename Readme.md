@@ -31,7 +31,6 @@ Project Frontend Tech Stack
 | --- | --- | --- | --- | --- | --- |--- | --- |
 
 
-![zoom-2](https://user-images.githubusercontent.com/59289789/89720141-028e1d80-d984-11ea-9861-c66436e67ec1.gif)
 ![zoom-0 (3)](https://user-images.githubusercontent.com/59289789/89720144-0c178580-d984-11ea-9d25-48398a27b2a3.gif)
 ![zoom-0 (2)](https://user-images.githubusercontent.com/59289789/89720149-1174d000-d984-11ea-8bdf-e2efefc4b6da.gif)
 
