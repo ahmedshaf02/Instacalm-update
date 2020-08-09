@@ -18,7 +18,7 @@ const Home = () => {
   // console.log(state)
 
   useEffect(() => {
-    fetch("https://sqtis.sse.codesandbox.io/allpost", {
+    fetch("https://instacalm-server.herokuapp.com/allpost", {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Home = () => {
 
   const handleLikePost = id => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/like", {
+    fetch("https://instacalm-server.herokuapp.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const Home = () => {
 
   const handleUnlikePost = id => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/unlike", {
+    fetch("https://instacalm-server.herokuapp.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const Home = () => {
 
   const hanldeDeletePost = postId => {
     console.log(postId);
-    fetch(`https://sqtis.sse.codesandbox.io/deletepost/${postId}`, {
+    fetch(`https://instacalm-server.herokuapp.com/deletepost/${postId}`, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",
@@ -125,7 +125,7 @@ const Home = () => {
 
   const handleComment = (text, id) => {
     console.log(id);
-    fetch("https://sqtis.sse.codesandbox.io/comment", {
+    fetch("https://instacalm-server.herokuapp.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -154,7 +154,7 @@ const Home = () => {
     const name = searchUser.current.value;
     console.log(name);
 
-    fetch(`https://sqtis.sse.codesandbox.io/search/${name}`, {
+    fetch(`https://instacalm-server.herokuapp.com/search/${name}`, {
       method: "get",
       headers: {
         "Content-Type": "application/json",
