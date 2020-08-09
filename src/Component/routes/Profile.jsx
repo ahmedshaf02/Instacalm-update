@@ -16,7 +16,7 @@ const Profile = () => {
 
   useEffect(()=>{
     // to get all posts
-    fetch("https://sqtis.sse.codesandbox.io/mypost",{
+    fetch("https://instacalm-server.herokuapp.com/mypost",{
       method:"get",
       headers:{
         "Content-Type":"application/json",
@@ -63,7 +63,7 @@ const Profile = () => {
   },[image])
 
   const updateImageServer=(url)=>{
-    fetch("https://sqtis.sse.codesandbox.io/updateimage",{
+    fetch("https://instacalm-server.herokuapp.com/updateimage",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
