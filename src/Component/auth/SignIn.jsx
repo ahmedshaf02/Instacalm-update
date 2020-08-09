@@ -24,7 +24,7 @@ const SignIn = ()=>{
   const postSignin=()=>{
 
     // signin request to server
-    fetch("https://sqtis.sse.codesandbox.io/signin",{
+    fetch("https://instacalm-server.herokuapp.com/signin",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
