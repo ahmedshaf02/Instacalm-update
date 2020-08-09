@@ -30,7 +30,7 @@ const SignUp = (props)=>{
   const postData=()=>{
     // signup request to server
     console.log(url)
-    fetch("https://sqtis.sse.codesandbox.io/signup",{
+    fetch("https://instacalm-server.herokuapp.com/signup",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
