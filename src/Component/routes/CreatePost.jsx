@@ -17,7 +17,7 @@ const CreatePost = () => {
 useEffect(()=>{
 
     if(url){
-      fetch("https://sqtis.sse.codesandbox.io/createpost",{
+      fetch("https://instacalm-server.herokuapp.com/createpost",{
         method:"post",
         headers:{
           "Authorization":"Bearer "+localStorage.getItem("jwt"),
