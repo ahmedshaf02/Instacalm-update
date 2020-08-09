@@ -26,7 +26,7 @@ const SignIn = ()=>{
       
       return M.toast({html:"please enter email",classes:"teal lighten-2"})
     }
-    fetch("https://sqtis.sse.codesandbox.io/password-reset",{
+    fetch("https://instacalm-server.herokuapp.com//password-reset",{
       method:"post",
       headers:{
         "Content-Type":"application/json"
